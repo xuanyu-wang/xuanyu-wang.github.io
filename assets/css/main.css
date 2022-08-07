@@ -1495,8 +1495,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #f56a6a !important;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1515,7 +1515,8 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(245, 106, 106, 0.05); }
+    background-color: rgba(255, 255, 255, 0.85); 
+    color: rgb(0, 0, 0) !important;}
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -1553,7 +1554,7 @@ button,
   input[type="button"].primary,
   button.primary,
   .button.primary {
-    background-color: #f56a6a;
+    background-color: #ffffff;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
@@ -1928,7 +1929,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  background-color: #000000;
   font-size: 0.9em;
   position: relative;
   width: 26em; }
@@ -1955,6 +1956,7 @@ button,
       padding: 2.22222em;
       width: calc(100% + 4.44444em); }
   #sidebar .toggle {
+    color:#000000;
     text-decoration: none;
     -moz-transition: left 0.5s ease;
     -webkit-transition: left 0.5s ease;
@@ -2009,6 +2011,7 @@ button,
           padding: 1.66667em;
           width: calc(100% + 3.33333em); }
       #sidebar .toggle {
+        color:#000000;
         height: 6.25em;
         left: 24em;
         line-height: 6.25em;
