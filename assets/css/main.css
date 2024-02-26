@@ -335,6 +335,7 @@ hr {
         padding-top: 0.75em; }
   .row {
     margin-top: 0;
+    margin-bottom: 1%;
     margin-left: -1.5em; }
     .row > * {
       padding: 0 0 0 1.5em; }
@@ -1935,7 +1936,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #000000;
+  background-color: #3d4449;
   font-size: 0.9em;
   position: relative;
   width: 26em; }
