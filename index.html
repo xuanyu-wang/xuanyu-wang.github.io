@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -391,6 +390,14 @@
 										<li><a href="#Awards">Awards</a></li>
 										<li><a href="#Services">Services</a></li>
 										<li><a href="#Contact">Contact</a></li>
+										<!-- <li>
+												<span class="opener">Submenu</span>
+												<ul>
+													<li style="width: 20em;">
+															<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=sL3-m9TON1UQSyajVzfa6N0hVTGiI4p0F4-cgK2k5IM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
+													</li>
+												</ul>
+										</li> -->
 									</ul>
 								</nav>
 
@@ -414,8 +421,26 @@
 										</article>
 									</div>
 									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
+										<li><a class="button" onclick="showOrHideMap()">More</a>
+										</li>
 									</ul>
+									
+									<script type="text/javascript">
+										function showOrHideMap(){
+											var div = $("#divMap").get(0);
+											if(div.style.display == "block"){
+												div.style.display = "none";
+											}else{
+												div.style.display = "block";
+											}
+										}
+										window.onload=function(){
+											$("#divMap").get(0).style.display = "none";
+										}
+									</script>
+									<div id="divMap" style="display:block;">
+										<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=sL3-m9TON1UQSyajVzfa6N0hVTGiI4p0F4-cgK2k5IM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
+									</div>
 								</section>
 
 							<!-- Section -->
@@ -437,8 +462,6 @@
 									<p class="copyright">&copy; Xuanyu WANG. All rights reserved.<br>
 										<!-- Demo Images: <a href="https://unsplash.com">Unsplash</a>.  -->
 									Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
-
-									<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=sL3-m9TON1UQSyajVzfa6N0hVTGiI4p0F4-cgK2k5IM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
 								</footer>
 						</div>
 					</div>
