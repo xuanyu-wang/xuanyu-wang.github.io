@@ -432,13 +432,14 @@
 												div.style.display = "none";
 											}else{
 												div.style.display = "block";
+												div.style.visibility = "visible";
 											}
 										}
 										window.onload=function(){
 											$("#divMap").get(0).style.display = "none";
 										}
 									</script>
-									<div id="divMap" style="display:block;">
+									<div id="divMap" style="display:block; visibility: hidden;">
 										<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=sL3-m9TON1UQSyajVzfa6N0hVTGiI4p0F4-cgK2k5IM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
 									</div>
 								</section>
