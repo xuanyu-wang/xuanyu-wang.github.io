@@ -427,20 +427,21 @@
 									
 									<script type="text/javascript">
 										function showOrHideMap(){
-											var div = $("#divMap").get(0);
-											if(div.style.display == "block"){
-												div.style.display = "none";
-											}else{
-												div.style.display = "block";
-												div.style.visibility = "visible";
-											}
-											// var div2 = $("#divMap2").get(0);
-											// if(div2.style.display == "block"){
-											// 	div2.style.display = "none";
+											// var div = $("#divMap").get(0);
+											// if(div.style.display == "block"){
+											// 	div.style.display = "none";
 											// }else{
-											// 	div2.style.display = "block";
-											// 	div2.style.visibility = "visible";
+											// 	div.style.display = "block";
+											// 	div.style.visibility = "visible";
 											// }
+
+											var div2 = $("#divMap2").get(0);
+											if(div2.style.display == "block"){
+												div2.style.display = "none";
+											}else{
+												div2.style.display = "block";
+												div2.style.visibility = "visible";
+											}
 											
 										}
 										window.onload=function(){
