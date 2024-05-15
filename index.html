@@ -427,20 +427,32 @@
 									
 									<script type="text/javascript">
 										function showOrHideMap(){
-											var div = $("#divMap").get(0);
-											if(div.style.display == "block"){
-												div.style.display = "none";
+											// var div = $("#divMap").get(0);
+											// if(div.style.display == "block"){
+											// 	div.style.display = "none";
+											// }else{
+											// 	div.style.display = "block";
+											// 	div.style.visibility = "visible";
+											// }
+											var div2 = $("#divMap2").get(0);
+											if(div2.style.display == "block"){
+												div2.style.display = "none";
 											}else{
-												div.style.display = "block";
-												div.style.visibility = "visible";
+												div2.style.display = "block";
+												div2.style.visibility = "visible";
 											}
+											
 										}
 										window.onload=function(){
 											$("#divMap").get(0).style.display = "none";
+											$("#divMap2").get(0).style.display = "none";
 										}
 									</script>
-									<div id="divMap" style="display:block; visibility: hidden;">
+									<div id="divMap" class="mini-posts" style="display:block; visibility: hidden;">
 										<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=sL3-m9TON1UQSyajVzfa6N0hVTGiI4p0F4-cgK2k5IM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
+									</div>
+									<div id="divMap2" class="mini-posts"  style="display:block; visibility: hidden;">
+										<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=tt&d=T-vkOfxqmzJM7WRpqaGTiBzoqlno4ZKJk9IfjPfExeM&co=3d4449&cmo=53b2ff&cmn=f56a6a'></script>
 									</div>
 								</section>
 
